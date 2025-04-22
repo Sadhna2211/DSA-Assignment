@@ -1,0 +1,14 @@
+A prefix sum array is an array that stores the running totals of another array. Each element in the prefix sum array represents the sum of all elements from the beginning of the array up to that index.
+
+(*) Applications of Prefix Sum Array:-
+
+1.Fast Range Sum Queries
+Quickly compute the sum of elements in any range.
+Especially useful in competitive programming and real-time systems.
+
+2.Frequency Counting
+Count how many times a condition holds over a range.
+Can be used in binary arrays for counting 1s or 0s over a range.
+3.Solving Subarray Problems
+For example, finding the number of subarrays with a given sum.
+Detecting equilibrium index or zero-sum subarrays.
