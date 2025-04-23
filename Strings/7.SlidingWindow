@@ -1,0 +1,21 @@
+ Sliding Window Technique 
+The sliding window technique is an efficient way to solve problems that involve finding subsets of a data structure (such as an array or string) that satisfy certain conditions. It is particularly useful for problems that require examining a contiguous subarray (or substring) and making decisions based on the elements within that subarray.
+
+                        How It Works
+1.The sliding window works by maintaining a "window" — a range of elements — within the array or string. This window "slides" through the array, gradually expanding or contracting depending on the conditions of the problem.
+
+2.Fixed-size window: The size of the window is constant, and you slide it across the data structure.
+
+3.Dynamic-size window: The size of the window can change dynamically based on certain conditions.
+
+
+                       Use Cases in String Problems
+
+1.Substrings of a Given Length or Property
+Example: Find the longest substring with no repeating characters, or with exactly k distinct characters.
+
+2.Substring or Subarray Sum/Conditions
+Example: Find the longest subarray with a sum less than a given number or with exactly k even numbers.  
+
+3.Anagrams and Permutations
+Example: Check if a string contains any permutation of another string (by comparing character counts in a sliding window).
