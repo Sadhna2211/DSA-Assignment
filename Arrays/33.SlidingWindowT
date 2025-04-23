@@ -1,0 +1,25 @@
+Sliding Window Technique in Array Problems
+The sliding window technique is a powerful method used for solving problems that require examining subarrays or subsequences in an array. It is particularly useful when you need to calculate or evaluate properties over contiguous subarrays of a fixed or variable size.
+
+ Types of Sliding Window:
+1.Fixed-size Window:
+The size of the window is constant, and only the position of the window changes.
+
+2.Variable-size Window:
+The window’s size changes dynamically as elements are added or removed based on certain conditions.
+
+
+Applications of the Sliding Window Technique in Array Problems
+1.Finding Maximum/Minimum Sum of Subarrays:
+Problem: Find the maximum sum of a subarray of size k.
+Sliding Window Approach: Use a fixed-size window to maintain the sum of the current subarray of size k. Slide the window by subtracting the element that’s left behind and adding the new element that enters the window.
+
+
+2.Longest Subarray with a Condition:
+Problem: Find the longest subarray with at most k distinct elements.
+Sliding Window Approach: Expand the window to include more elements, and if the window contains more than k distinct elements, move the start pointer to shrink the window until the condition is satisfied.
+
+
+3.Subarray with Given Sum:
+Problem: Find if there is a subarray with a sum equal to S.
+Sliding Window Approach: Maintain a window that expands when the sum is smaller than S and contracts when the sum exceeds S. Adjust the start pointer to ensure the sum remains balanced.
