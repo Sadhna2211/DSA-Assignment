@@ -1,0 +1,31 @@
+/* 7. Explain the sliding window technique and its use in string problems.   */
+
+
+The sliding window technique is a useful approach for solving problems involving arrays or strings, especially when working with subarrays or substrings.
+It involves using a window (typically defined by two pointers) that moves across the input to track a subset of elements. 
+As the window slides, elements are added or removed efficiently without recalculating the entire range from scratch.
+This method is particularly effective in optimizing problems like finding the longest substring without repeating characters, calculating averages of subarrays, or checking for patterns. 
+Sliding windows can be either fixed-size or variable-size depending on the problem's requirements. Overall, it improves performance and often reduces the time complexity to linear time, making it a go-to strategy for many coding problems.
+
+
+                              Common Types of Sliding Window Problems in Strings:
+1.Fixed-size Sliding Window: The window size is constant. The challenge is to perform operations (like summing values, counting characters, etc.) as the window slides over the string.
+Example Problem: Find the maximum sum of any subarray of size k in an array or find the longest substring of fixed length k in a string.
+
+2.Variable-size Sliding Window: The window size changes dynamically based on certain conditions, such as constraints on the number of distinct characters or a target sum.
+Example Problem: Find the length of the longest substring without repeating characters.
+
+
+                             Longest Substring Without Repeating Characters:
+
+1.Problem: Given a string, find the length of the longest substring without repeating characters.
+Sliding Window Approach:
+Use two pointers to represent the window. Expand the window by moving the right pointer.
+When a repeating character is found, move the left pointer to remove the duplicate.
+Keep track of the longest valid window as you go.
+
+2.Find All Anagrams in a String:
+Problem: Given a string and a pattern, find all occurrences of anagrams of the pattern in the string.
+Sliding Window Approach:
+Keep a frequency count of the characters in the pattern.
+Use a sliding window of the same size as the pattern and check if the frequency of characters in the window matches the pattern.
