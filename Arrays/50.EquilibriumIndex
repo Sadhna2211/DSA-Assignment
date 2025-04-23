@@ -1,0 +1,24 @@
+Equilibrium Index of an Array
+The equilibrium index (also known as the pivot index) of an array is an index where the sum of the elements to the left of it is equal to the sum of the elements to the right of it. In other words, at this index, the array is "balanced," as the total sum of the elements on both sides is identical.
+
+
+How to Find the Equilibrium Index
+                                          
+1.Total Sum: Start by calculating the total sum of all elements in the array.
+
+2.Left Sum: Maintain a running sum of the elements to the left of the current index (left_sum).
+
+3.Right Sum: Use the total sum to compute the right sum of the array for each index. The right sum at index i is equal to total_sum - left_sum - arr[i].
+
+4.Check for Equilibrium: If the left sum equals the right sum, then index i is the equilibrium index.
+
+5.Move to the Next Index: Update the left sum by adding arr[i] and move to the next index.
+
+
+Applications of Equilibrium Index in Array Problems
+1.Balancing Arrays:
+The equilibrium index is useful for dividing an array into two parts with equal sums. This concept can be extended to many problems where you need to find a pivot or partition the array for further processing.
+2.Optimizing Search for Balanced Subarrays:
+Problems that require finding balanced subarrays (where the sum of elements on both sides of an index is the same) can be efficiently solved using the equilibrium index concept.
+3.Subarray Sum Problems:
+For some subarray sum problems, the equilibrium index helps break down the array into smaller subarrays that can be processed separately, making the solution more efficient.
