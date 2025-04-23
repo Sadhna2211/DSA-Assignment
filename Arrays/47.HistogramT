@@ -1,0 +1,33 @@
+/* 47. Explain the concept of histogram problems and their applications in algorithm design.  */
+
+
+What Is a Histogram Problem?
+In algorithm design, histogram problems typically refer to computational problems based on a histogram — a bar chart where each bars height represents a value.These bars are usually given as an array of integers, and the most classic problem in this category is:
+Largest Rectangle in a Histogram — Given an array representing the heights of bars in a histogram, find the largest rectangular area that can be formed using contiguous bars.
+
+
+Algorithmic Idea Behind Histogram Problems
+The core idea is to find how far each bar can extend left and right without encountering a smaller bar, as this will determine the maximum width for the current height.
+
+Efficient Approach: Stack-based Solution
+1.Use a stack to keep track of indices of bars.
+2.While traversing:
+3.Push bar index onto the stack if it’s taller than the bar at the top of the stack.
+4.If a shorter bar is encountered, pop bars from the stack and calculate the area with the popped height as the smallest bar.
+5.Repeat this until you’ve processed all bars.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+
+Application in Algorithm Design
+
+1. Trapping Rain Water
+Given elevation bars, compute how much water is trapped after raining.
+Uses concepts of max heights to the left and right of each bar.
+ Applications: Terrain modeling, flood simulation.
+
+2. Stock Span Problem
+For each day’s price, find the number of consecutive previous days with a lower price.
+Based on a monotonic stack, which is a common histogram technique.
+ Applications: Financial modeling, stock market analysis.   
